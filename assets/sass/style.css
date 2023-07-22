@@ -1,0 +1,134 @@
+.body {
+  background-image: url("../images/2078954.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.body .sagla {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.body .main .box {
+  border: 2px solid white;
+  height: 6rem;
+  width: 30%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.body .main .box:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.body #playerCard {
+  margin: 7rem auto;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 30rem;
+}
+
+.body #playerCard input {
+  background-color: transparent;
+  color: white;
+}
+
+.body #playerCard input::-webkit-input-placeholder {
+  color: white;
+}
+
+.body #playerCard input:-ms-input-placeholder {
+  color: white;
+}
+
+.body #playerCard input::-ms-input-placeholder {
+  color: white;
+}
+
+.body #playerCard input::placeholder {
+  color: white;
+}
+
+.body #playerCard input:focus {
+  background-color: transparent;
+}
+
+.body #playerCard button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0;
+}
+
+.body #playerCard button:hover {
+  background-color: white;
+  color: black;
+}
+
+.body #gameCard {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 2px solid white;
+  border-radius: 0;
+}
+
+.body .progress-bg:hover {
+  background-color: none;
+}
+
+@media screen and (max-width: 450px) {
+  #playerCard {
+    width: 20rem !important;
+    margin: 0;
+  }
+  .card {
+    background-color: pink;
+  }
+  .sagla {
+    width: 90%;
+    padding: 0;
+  }
+  #gameCard {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #gameCard {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .box {
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .box {
+    height: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

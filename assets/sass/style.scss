@@ -1,0 +1,118 @@
+.body {
+    background-image: url('../images/2078954.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+    .sagla {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 20rem;
+        justify-content: center;
+        gap: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+
+        .box {
+            border: 2px solid white;
+            height: 6rem;
+            width: 30%;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    #playerCard {
+        margin: 7rem auto;
+        background-color: rgba(000, 000, 000, 0.35);
+        width: 30rem;
+
+        input {
+            background-color: transparent;
+            color: white;
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:focus {
+                background-color: transparent;
+            }
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 0;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    #gameCard {
+        background-color: rgba(000, 000, 000, 0.35);
+        border: 2px solid white;
+        border-radius: 0;
+    }
+
+    .progress-bg {
+        &:hover {
+            background-color: none;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    #playerCard {
+        width: 20rem !important;
+        margin: 0;
+    }
+
+    .card{
+        background-color: pink;
+    }
+
+    .sagla {
+        width: 90%;
+        padding: 0;
+    }
+
+    #gameCard {
+        width: 100% !important;
+    }
+}
+
+@media screen and(max-width:500px) {
+    #gameCard {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .box {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .box {
+        height: 3rem;
+    }
+}
